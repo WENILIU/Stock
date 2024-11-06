@@ -1,8 +1,7 @@
-#!/usr/bin/env python
+
 # coding: utf-8
 
 # In[1]:
-
 
 import time
 import json
@@ -36,15 +35,12 @@ print( (tEnd - tStart))
 #技術指標只是指標,不是命令
 
 
-
 # In[ ]:
 
 
 
 
-
 # In[172]:
-
 
 #VWAP指標
 def calculate_vwap(data):
@@ -89,7 +85,6 @@ def calculate_vwap(data):
 
 
 # In[ ]:
-
 
 #VWAP指標
 def calculate_vwap_adjust(data,adjust_thre):
@@ -146,7 +141,6 @@ def calculate_vwap_adjust(data,adjust_thre):
 
 # In[173]:
 
-
 #MA指標(週期5,10,20,60)
 def calculate_ma(data,K=5):
     data=data['data']
@@ -186,7 +180,6 @@ def calculate_ma(data,K=5):
 
 
 # In[ ]:
-
 
 #VMA指標(週期5,10,20,60)
 def calculate_vma(data,K=5):
@@ -228,7 +221,6 @@ def calculate_vma(data,K=5):
 
 # In[174]:
 
-
 #EMA指標(週期5,10,20,60)
 def calculate_ema(data,K=5):
     data=data['data']
@@ -264,7 +256,6 @@ def calculate_ema(data,K=5):
 
 # In[ ]:
 
-
 def calculate_rsi(data, period=14):
     close_prices = [item['close'] for item in data['data']]
     deltas = np.diff(close_prices)
@@ -299,15 +290,12 @@ def calculate_rsi(data, period=14):
 
 
 
-
 # In[ ]:
 
 
 
 
-
 # In[ ]:
-
 
 
 
